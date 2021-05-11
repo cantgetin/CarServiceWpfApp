@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6a7a1242907b4a53a6eaf812416287c9" Name="Diagram1" DisplayType="true" ZoomLevel="109" >
+        <EntityTypeShape EntityType="Model1.Car" Width="2" PointX="4.25" PointY="1.375" />
+        <EntityTypeShape EntityType="Model1.Client" Width="1.875" PointX="1.5" PointY="3.75" />
+        <EntityTypeShape EntityType="Model1.Service" Width="1.875" PointX="7.375" PointY="1.375" />
+        <EntityTypeShape EntityType="Model1.User" Width="1.75" PointX="1.75" PointY="1.5" />
+        <EntityTypeShape EntityType="Model1.Employee" Width="1.875" PointX="7.375" PointY="5" />
+        <EntityTypeShape EntityType="Model1.Order" Width="1.75" PointX="4.25" PointY="5.625" />
+        <AssociationConnector Association="Model1.ClientOrder" />
+        <AssociationConnector Association="Model1.EmployeeOrder" />
+        <AssociationConnector Association="Model1.OrderCar" />
+        <AssociationConnector Association="Model1.CarService" />
+        <AssociationConnector Association="Model1.ServiceEmployee" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

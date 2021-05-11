@@ -1,0 +1,36 @@
+﻿<Window x:Class="ViewChanger.Views.CarDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewChanger.Views"
+        mc:Ignorable="d"
+        Title="CarDetails" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="176" Margin="10,33,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label x:Name="labelTitle_Copy" Content="Изображение" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="image"  Width="150" Height="150" Source="{Binding Path=ImagePath}" Margin="21,49,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Label FontSize="20" x:Name="CarTitle" Grid.Column="1" HorizontalAlignment="Left"  Margin="0,20,0,0" VerticalAlignment="Top" Height="40"/>
+            <Label FontSize="16" x:Name="CarYear" Grid.Column="1" HorizontalAlignment="Left"  Margin="0,20,0,0" VerticalAlignment="Top"/>
+            <Label FontSize="16" x:Name="CarOwner" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Label FontSize="16" x:Name="CarEmployee" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Label FontSize="16" x:Name="CarFault" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label FontSize="16" x:Name="CarServiceTitle" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label FontSize="16" x:Name="CarArrivalDate" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="31"/>
+            <Label FontSize="16" x:Name="CarDepartureDate" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="31"/>
+            
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>
